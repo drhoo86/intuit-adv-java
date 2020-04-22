@@ -1,4 +1,4 @@
-package lecture1;
+package drhoo.intuit;
 
 public class PageGenerator {
 	

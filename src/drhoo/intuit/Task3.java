@@ -1,12 +1,12 @@
-package lecture1;
+package drhoo.intuit;
 
 import org.eclipse.jetty.server.Server;
 
-public class Task2 {
+public class Task3 {
 
 	public static void main(String[] args) throws  Exception {
 		Server server = new Server(8080);
-		server.setHandler(new HelloHandler("Hello Server!"));
+		server.setHandler(new PageHandler("Hello Server!", "Task3"));
 		server.start();
 		server.join();
 	}
