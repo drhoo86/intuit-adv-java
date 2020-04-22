@@ -1,5 +1,6 @@
 package drhoo.intuit;
 
+// lecture 2, task 1
 public class Task2_1 {
 
 	public static void main(String[] args) throws Exception {
