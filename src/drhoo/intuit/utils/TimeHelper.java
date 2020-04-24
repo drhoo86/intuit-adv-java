@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.utils;
 
 public class TimeHelper {
 	public static void sleep(int period){

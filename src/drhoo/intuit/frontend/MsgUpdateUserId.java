@@ -1,4 +1,8 @@
-package drhoo.intuit;
+package drhoo.intuit.frontend;
+
+import drhoo.intuit.base.Address;
+import drhoo.intuit.base.Frontend;
+import drhoo.intuit.messageSystem.MsgToFrontend;
 
 public class MsgUpdateUserId extends MsgToFrontend {
 
@@ -11,7 +15,7 @@ public class MsgUpdateUserId extends MsgToFrontend {
 		this.id = id;
 	}
 
-	void exec(Frontend frontend) {
+	public void exec(Frontend frontend) {
 		frontend.setId(name, id);
 	}
 

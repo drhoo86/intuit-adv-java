@@ -1,4 +1,8 @@
-package drhoo.intuit;
+package drhoo.intuit.frontend;
+
+import drhoo.intuit.base.AccountService;
+import drhoo.intuit.base.Address;
+import drhoo.intuit.messageSystem.MsgToAS;
 
 public class MsgGetUserId extends MsgToAS {
 	private String name;
@@ -8,7 +12,7 @@ public class MsgGetUserId extends MsgToAS {
 		this.name = name;
 	}
 
-	void exec(AccountService accountService) {
+	public void exec(AccountService accountService) {
 		Integer id = accountService.getUserId(name);
 		accountService.getMessageSystem().sendMessage(new MsgUpdateUserId(getTo(), getFrom(), name, id));
 	}

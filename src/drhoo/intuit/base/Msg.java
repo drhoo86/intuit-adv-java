@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.base;
 
 public abstract class Msg {
 	private Address from;
@@ -9,13 +9,13 @@ public abstract class Msg {
 		this.to = to;
 	}
 	
-	protected Address getFrom(){
+	public Address getFrom(){
 		return from;
 	}
 	
-	protected Address getTo(){
+	public Address getTo(){
 		return to;
 	}
 	
-	abstract void exec(Abonent abonent);
+	public abstract void exec(Abonent abonent);
 }

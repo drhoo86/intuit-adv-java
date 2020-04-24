@@ -1,7 +1,13 @@
-package drhoo.intuit;
+package drhoo.intuit.accountService;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import drhoo.intuit.base.Abonent;
+import drhoo.intuit.base.AccountService;
+import drhoo.intuit.base.Address;
+import drhoo.intuit.base.MessageSystem;
+import drhoo.intuit.utils.TimeHelper;
 
 public class AccountServiceImpl implements AccountService, Abonent, Runnable {
 	private Address address;

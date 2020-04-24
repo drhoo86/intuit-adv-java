@@ -1,6 +1,11 @@
-package drhoo.intuit;
+package drhoo.intuit.main;
 
 import org.eclipse.jetty.server.Server;
+
+import drhoo.intuit.accountService.AccountServiceImpl;
+import drhoo.intuit.base.MessageSystem;
+import drhoo.intuit.frontend.FrontendImpl;
+import drhoo.intuit.messageSystem.MessageSystemImpl;
 
 public class Main {
 	public static void main(String[] args) throws Exception {

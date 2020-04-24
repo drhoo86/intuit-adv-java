@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.base;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

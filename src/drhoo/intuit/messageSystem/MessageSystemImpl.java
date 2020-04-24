@@ -1,9 +1,15 @@
-package drhoo.intuit;
+package drhoo.intuit.messageSystem;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
+
+import drhoo.intuit.base.Abonent;
+import drhoo.intuit.base.Address;
+import drhoo.intuit.base.AddressService;
+import drhoo.intuit.base.MessageSystem;
+import drhoo.intuit.base.Msg;
 
 public class MessageSystemImpl implements MessageSystem {
 	private Map<Address, ConcurrentLinkedQueue<Msg>> messages = new HashMap<Address, ConcurrentLinkedQueue<Msg>>();

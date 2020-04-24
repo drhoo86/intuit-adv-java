@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.frontend;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -10,6 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
+
+import drhoo.intuit.accountService.AccountServiceImpl;
+import drhoo.intuit.base.Abonent;
+import drhoo.intuit.base.Address;
+import drhoo.intuit.base.Frontend;
+import drhoo.intuit.base.MessageSystem;
+import drhoo.intuit.utils.TimeHelper;
 
 public class FrontendImpl extends AbstractHandler implements Frontend, Abonent, Runnable {
 	private static String GAME_NAME = "/test/";

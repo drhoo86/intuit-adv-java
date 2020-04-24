@@ -1,7 +1,11 @@
-package drhoo.intuit;
+package drhoo.intuit.messageSystem;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import drhoo.intuit.base.Abonent;
+import drhoo.intuit.base.Address;
+import drhoo.intuit.base.AddressService;
 
 public class AddressServiceImpl implements AddressService {
 	private Map<Class<?>, Address> addresses = new HashMap<Class<?>, Address>();
