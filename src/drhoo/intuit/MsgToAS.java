@@ -7,7 +7,7 @@ public abstract class MsgToAS extends Msg{
 	}
 
 	void exec(Abonent abonent) {
-		if(abonent instanceof AccountService){
+		if(abonent instanceof AccountServiceImpl){
 			exec((AccountService) abonent);
 		}
 	}

@@ -4,10 +4,10 @@ import org.eclipse.jetty.server.Server;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
-		MessageSystem ms = new MessageSystem();
+		MessageSystem ms = new MessageSystemImpl();
 		
-		Frontend frontend = new Frontend(ms);
-		AccountService accountService = new AccountService(ms);
+		FrontendImpl frontend = new FrontendImpl(ms);
+		AccountServiceImpl accountService = new AccountServiceImpl(ms);
 		
 		(new Thread(frontend)).start();
 		(new Thread(accountService)).start();

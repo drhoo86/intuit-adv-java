@@ -7,7 +7,7 @@ public abstract class MsgToFrontend extends Msg{
 	}
 
 	public void exec(Abonent abonent) {
-		if(abonent instanceof Frontend){
+		if(abonent instanceof FrontendImpl){
 			exec((Frontend)abonent);
 		}
 	}
