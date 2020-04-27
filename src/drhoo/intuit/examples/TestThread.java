@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.examples;
 
 import java.util.logging.Logger;
 

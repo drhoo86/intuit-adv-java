@@ -1,12 +1,13 @@
-package drhoo.intuit;
+package drhoo.intuit.examples;
 
 import org.eclipse.jetty.server.Server;
 
-public class OneHandler {
+// lecture 1, task 2
+public class Task1_2 {
 
 	public static void main(String[] args) throws  Exception {
 		Server server = new Server(8080);
-		server.setHandler(new HelloHandler("Hello Server", "qqq"));
+		server.setHandler(new HelloHandler("Hello Server!"));
 		server.start();
 		server.join();
 	}

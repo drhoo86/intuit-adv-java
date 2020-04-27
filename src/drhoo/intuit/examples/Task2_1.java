@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.examples;
 
 // lecture 2, task 1
 public class Task2_1 {

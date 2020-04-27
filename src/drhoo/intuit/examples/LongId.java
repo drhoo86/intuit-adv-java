@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.examples;
 
 public class LongId<T> {
 

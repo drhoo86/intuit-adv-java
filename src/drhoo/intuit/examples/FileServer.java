@@ -1,4 +1,4 @@
-package drhoo.intuit;
+package drhoo.intuit.examples;
 
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
